@@ -36,6 +36,7 @@ def get_stock_hkex(syb):
     #sybs = ['1','2','3']
     r = requests.get(url+syb+append)
     m = re.search(r"\{.+\}", r.text)
+    requests.session()
     res = json.loads(m.group(0))
     stock_quote = res['data']['quote']
     ric = stock_quote['ric']
