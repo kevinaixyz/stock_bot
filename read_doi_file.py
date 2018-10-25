@@ -249,7 +249,7 @@ if __name__ == "__main__":
         .getOrCreate()
     # conf = SparkConf().setMaster("local").setAppName("My App")
     # sc = SparkContext(conf = conf)
-    # file_path = r"\\PC003428\Greyspark\Kevin\\Raw Data\\"
+    # file_path = r"\\**\\Raw Data\\"
     # file_name = r"Company Disclosure of Interest - OPGM {0}.xls"
     # date_list = getFileNames("2018-02-12", "2018-05-31")
     # if date_list is not None and len(date_list) > 0:
@@ -259,7 +259,7 @@ if __name__ == "__main__":
     #             df_doi = pd.read_excel(
     #                 xls, 0, index_col=None, header=0, skiprows=2)
 
-    file_path = r"\\PC003428\Greyspark\Kevin\Raw Data"
+    file_path = r"\\**\Raw Data"
     file_name_pattern = "Company Disclosure of Interest(\s*)-(\s*)OPGM(\s*)\d{8}.xls$"
     files = [f for f in os.listdir(file_path) if re.match(file_name_pattern, f)]
     print(files)
