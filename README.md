@@ -1,13 +1,13 @@
-# stock_spider
+# stock_bot
 
-This is to crawl HK stocks information for study usage
-Please notice the url required info (eg. token, qid and call back)
+This is program to crawl HK stocks information for study.  
+Please notice the url required info (eg. token, qid and call back). This will be improved later.
 
-- Industry analysis:
-- Stocks > 5%
-- For stocks:
-  - Holding changes : variant
-- Relationship
-  - Autocorraltion
-  - correlation with HSI
+Stock infomation is from
+- HKEX
+- AASTOCK
 
+Later improvement:
+- Choose the web resource
+- Auto setting
+- History information
